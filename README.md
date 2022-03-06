@@ -7,7 +7,7 @@ This role has minimal access to S3 and KMS.
 ```tf
 
 module "terraform_backend" {
-  source      = "git@github.com:moajo/terraform-backend-s3-bucket.git?ref=v1.0.0"
+  source      = "git@github.com:moajo/terraform-backend-s3-bucket.git?ref=v2.0.0"
   bucket_name = "projecthogehoge-terraform-backend" # Must be a globally unique bucket name
 }
 
@@ -31,13 +31,13 @@ module "terraform_backend_role" {
 
 | Name                                                   | Version |
 | ------------------------------------------------------ | ------- |
-| <a name="requirement_aws"></a> [aws](#requirement_aws) | ~> 3.0  |
+| <a name="requirement_aws"></a> [aws](#requirement_aws) | ~> 4.0  |
 
 ## Providers
 
 | Name                                             | Version |
 | ------------------------------------------------ | ------- |
-| <a name="provider_aws"></a> [aws](#provider_aws) | ~> 3.0  |
+| <a name="provider_aws"></a> [aws](#provider_aws) | ~> 4.0  |
 
 ## Modules
 
